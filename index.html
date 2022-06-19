@@ -5,6 +5,133 @@
     <title>Nathaniel Macapinlac</title>
     <link rel="icon" href="hondasan.png">
     <script src="https://kit.fontawesome.com/d5effce557.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+        
+        @keyframes fadeIn{
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+        
+        .pink{
+            color: #ff9eb5
+        }
+        
+        .hidden{
+            display: none;
+        }
+        
+        .hidden-click{
+            display: none;
+        }
+        
+        .name{
+            font-weight: 400;
+            font-size: 1.8em;
+            margin-bottom: 2px;
+        }
+        
+        .below{
+         margin: 0;
+         font-size: 0.95em;
+        }
+        
+        .click-anywhere{
+            font-size: .9em;
+            color: #ff9eb5;
+        }
+        
+        button{
+            font-size: .5em;
+            margin: 0;
+            padding-left: 0;
+            background: white;
+            border: none;
+            color: #ff9eb5;
+            cursor:pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body{
+            font-family: 'Poppins', sans-serif;
+            font-size: calc(10px + 0.33vw);
+            color: #020248;
+            padding: 5vh 10vw
+        }
+        
+        h1{
+            font-size: 4.5em;
+            font-weight: 500;
+            margin-bottom: 0;
+            animation: fadeIn ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        
+        p{
+            font-size: 1.6em;
+            max-width: 28em;
+            font-weight: 300;
+            animation: fadeIn ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        
+        hr{
+            max-width: 28em; 
+            margin-left: 0; 
+            border: none; 
+            height: 1px; 
+            background-color: #020248;
+            animation: fadeIn ease 1s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        
+        a {
+        color: #ff9eb5;
+          text-decoration: none;
+          box-shadow: inset 0 0 0 0 #ff9eb5;
+          color: #ff9eb5;
+          padding: 0 .25rem;
+          margin: 0 -.25rem;
+          transition: color .25s ease-in-out, box-shadow .25s ease-in-out;
+        }
+        
+        a:hover {
+          color: white;
+          box-shadow: inset 200px 0 0 0 #ff9eb5;
+        }
+        
+        ::selection {
+          background: #F8C8DC;
+        }
+        
+        @media (max-width: 600px){
+            .hidden{
+                display:contents;
+            }
+        
+            .click-anywhere{
+                visibility: hidden;
+                font-size: .9em;
+                color: #ff9eb5;
+            }
+        
+        button{
+            visibility: hidden;
+            font-size: .5em;
+            margin: 0;
+            padding-left: 0;
+            background: white;
+            border: none;
+            color: #ff9eb5;
+            cursor:pointer;
+            font-family: 'Poppins', sans-serif;
+        }
+            
+        }
+        </style>
 </head>
 <body>
     <div id="main">
@@ -62,131 +189,3 @@
 
 </body>
 </html>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
-
-@keyframes fadeIn{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-.pink{
-    color: #ff9eb5
-}
-
-.hidden{
-    display: none;
-}
-
-.hidden-click{
-    display: none;
-}
-
-.name{
-    font-weight: 400;
-    font-size: 1.8em;
-    margin-bottom: 2px;
-}
-
-.below{
- margin: 0;
- font-size: 0.95em;
-}
-
-.click-anywhere{
-    font-size: .9em;
-    color: #ff9eb5;
-}
-
-button{
-    font-size: .5em;
-    margin: 0;
-    padding-left: 0;
-    background: white;
-    border: none;
-    color: #ff9eb5;
-    cursor:pointer;
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
-    font-family: 'Poppins', sans-serif;
-    font-size: calc(10px + 0.33vw);
-    color: #020248;
-    padding: 5vh 10vw
-}
-
-h1{
-    font-size: 4.5em;
-    font-weight: 500;
-    margin-bottom: 0;
-    animation: fadeIn ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-p{
-    font-size: 1.6em;
-    max-width: 28em;
-    font-weight: 300;
-    animation: fadeIn ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-hr{
-    max-width: 28em; 
-    margin-left: 0; 
-    border: none; 
-    height: 1px; 
-    background-color: #020248;
-    animation: fadeIn ease 1s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-a {
-color: #ff9eb5;
-  text-decoration: none;
-  box-shadow: inset 0 0 0 0 #ff9eb5;
-  color: #ff9eb5;
-  padding: 0 .25rem;
-  margin: 0 -.25rem;
-  transition: color .25s ease-in-out, box-shadow .25s ease-in-out;
-}
-
-a:hover {
-  color: white;
-  box-shadow: inset 200px 0 0 0 #ff9eb5;
-}
-
-::selection {
-  background: #F8C8DC;
-}
-
-@media (max-width: 600px){
-    .hidden{
-        display:contents;
-    }
-
-    .click-anywhere{
-        visibility: hidden;
-        font-size: .9em;
-        color: #ff9eb5;
-    }
-
-button{
-    visibility: hidden;
-    font-size: .5em;
-    margin: 0;
-    padding-left: 0;
-    background: white;
-    border: none;
-    color: #ff9eb5;
-    cursor:pointer;
-    font-family: 'Poppins', sans-serif;
-}
-    
-}
-</style>

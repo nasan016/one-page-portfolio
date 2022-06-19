@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html onclick="showNextDiv()"lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Nathaniel Macapinlac</title>
+    <link rel="icon" href="hondasan.png">
     <script src="https://kit.fontawesome.com/d5effce557.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -22,7 +24,7 @@
     </div>
     <div id="2" class="hidden">
         <p>
-            Outside of school and programming, I enjoy playing piano, reading, and videogames.
+            Outside of school and programming, I enjoy playing the piano, reading books, and playing videogames.
             My favorite piano piece is <a href="https://www.youtube.com/watch?v=KpOtuoHL45Y" target="_blank">Liebestraum,</a> 
             my favorite book is <a href="https://en.wikipedia.org/wiki/1Q84" target="_blank">1Q84,</a>
             and my favorite videogame is <a href="https://en.wikipedia.org/wiki/Street_Fighter" target="_blank">Street Fighter.</a>
@@ -46,7 +48,7 @@
                 show_div.className = ''
                 console.log(div_counter)
                 if(div_counter === 2){
-                        click_screen.className = 'hidden'
+                        click_screen.className = 'hidden-click'
                         reload.className = ''
                         div_counter = 2
                     }
@@ -74,6 +76,10 @@
 }
 
 .hidden{
+    display: none;
+}
+
+.hidden-click{
     display: none;
 }
 
@@ -157,5 +163,30 @@ a:hover {
 
 ::selection {
   background: #F8C8DC;
+}
+
+@media (max-width: 600px){
+    .hidden{
+        display:contents;
+    }
+
+    .click-anywhere{
+        visibility: hidden;
+        font-size: .9em;
+        color: #ff9eb5;
+    }
+
+button{
+    visibility: hidden;
+    font-size: .5em;
+    margin: 0;
+    padding-left: 0;
+    background: white;
+    border: none;
+    color: #ff9eb5;
+    cursor:pointer;
+    font-family: 'Poppins', sans-serif;
+}
+    
 }
 </style>

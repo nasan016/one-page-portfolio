@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html onclick="showNextDiv()"lang="en">
+<head>
+    <title>Nathaniel Macapinlac</title>
+    <script src="https://kit.fontawesome.com/d5effce557.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main">
+        <h1>Hello. <i class="fa-solid fa-hand-holding-heart"></i></h1>
+        <div>
+            <p class="name">I'm Nathaniel Macapinlac.</p>
+            <p class="below">I try to make stuff.</p>
+            <hr>
+        </div>
+    <div id="1" class="hidden">
+        <p>
+            I'm a student at NYU Tandon and I'm studying Computer Engineering and Computer Science.
+            You can find me on <a href="https://www.linkedin.com/in/nathanielmacapinlac/" target="_blank">LinkedIn,</a> 
+            view my projects on <a href="https://github.com/nasan016" target="_blank">GitHub,</a> 
+            and you can even send me an <a href="mailto:nlm8841@nyu.edu">email</a> if you want.
+        </p>
+    </div>
+    <div id="2" class="hidden">
+        <p>
+            Outside of school and programming, I enjoy playing piano, reading, and videogames.
+            My favorite piano piece is <a href="https://www.youtube.com/watch?v=KpOtuoHL45Y" target="_blank">Liebestraum,</a> 
+            my favorite book is <a href="https://en.wikipedia.org/wiki/1Q84" target="_blank">1Q84,</a>
+            and my favorite videogame is <a href="https://en.wikipedia.org/wiki/Street_Fighter" target="_blank">Street Fighter.</a>
+        </p>
+    </div>
+    </div>
+    <p id="click" class="click-anywhere">click to see more ...</p>
+    <p><button onclick="resetpage()" id="reload" class="hidden">click me to reload the page ...</button></p>
+
+    <script>
+        const click_screen = document.getElementById("click")
+        const reload = document.getElementById("reload")
+        var div_counter = 0
+
+        function showNextDiv(){
+            if(div_counter === 2){
+
+            }else{
+                div_counter++
+                let show_div = document.getElementById(div_counter.toString())
+                show_div.className = ''
+                console.log(div_counter)
+                if(div_counter === 2){
+                        click_screen.className = 'hidden'
+                        reload.className = ''
+                        div_counter = 2
+                    }
+                }
+            }
+
+            function resetpage(){
+                location.reload()
+            }
+    </script>
+
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+@keyframes fadeIn{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.pink{
+    color: #ff9eb5
+}
+
+.hidden{
+    display: none;
+}
+
+.name{
+    font-weight: 400;
+    font-size: 1.8em;
+    margin-bottom: 2px;
+}
+
+.below{
+ margin: 0;
+ font-size: 0.95em;
+}
+
+.click-anywhere{
+    font-size: .9em;
+    color: #ff9eb5;
+}
+
+button{
+    font-size: .5em;
+    margin: 0;
+    padding-left: 0;
+    background: white;
+    border: none;
+    color: #ff9eb5;
+    cursor:pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(10px + 0.33vw);
+    color: #020248;
+    padding: 5vh 10vw
+}
+
+h1{
+    font-size: 4.5em;
+    font-weight: 500;
+    margin-bottom: 0;
+    animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+p{
+    font-size: 1.6em;
+    max-width: 28em;
+    font-weight: 300;
+    animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+hr{
+    max-width: 28em; 
+    margin-left: 0; 
+    border: none; 
+    height: 1px; 
+    background-color: #020248;
+    animation: fadeIn ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+a {
+color: #ff9eb5;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 #ff9eb5;
+  color: #ff9eb5;
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .25s ease-in-out, box-shadow .25s ease-in-out;
+}
+
+a:hover {
+  color: white;
+  box-shadow: inset 200px 0 0 0 #ff9eb5;
+}
+
+::selection {
+  background: #F8C8DC;
+}
+</style>

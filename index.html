@@ -144,12 +144,17 @@
     <div id="1" class="hidden">
         <p>
             I'm a student at NYU Tandon and I'm studying Computer Engineering and Computer Science.
-            You can find me on <a href="https://www.linkedin.com/in/nathanielmacapinlac/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn,</a> 
-            view my projects on <a href="https://github.com/nasan016" target="_blank"><i class="fa-brands fa-github-alt"></i> GitHub,</a> 
-            and you can even send me an <a href="mailto:nlm8841@nyu.edu"><i class="fa-solid fa-envelope"></i> email</a> if you want.
         </p>
     </div>
     <div id="2" class="hidden">
+        <p>
+            You can find me on <a href="https://www.linkedin.com/in/nathanielmacapinlac/" target="_blank" style="white-space: nowrap;"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn,</a> 
+            view my projects on <a href="https://github.com/nasan016" target="_blank" style="white-space: nowrap;"><i class="fa-brands fa-github-alt"></i>&nbsp;GitHub,</a>
+            and you can even send me an <a href="mailto:nlm8841@nyu.edu" style="white-space: nowrap;"><i class="fa-solid fa-envelope"></i>&nbsp;email</a> if you want.
+            You can find the GitHub repository for this website <a href="https://github.com/nasan016/one-page-portfolio" target="_blank" style="white-space: nowrap;"><i class="fa-solid fa-code"></i>&nbsp;here.</a>
+        </p>
+    </div>
+    <div id="3" class="hidden">
         <p>
             Besides school and programming, I enjoy playing the piano, reading books, and playing videogames.
         </p>
@@ -164,17 +169,17 @@
         var div_counter = 0
 
         function showNextDiv(){
-            if(div_counter === 2){
+            if(div_counter === 3){
 
             }else{
                 div_counter++
                 let show_div = document.getElementById(div_counter.toString())
                 show_div.className = ''
                 console.log(div_counter)
-                if(div_counter === 2){
+                if(div_counter === 3){
                         click_screen.className = 'hidden-click'
                         reload.className = ''
-                        div_counter = 2
+                        div_counter = 3
                     }
                 }
             }
